@@ -1,0 +1,12 @@
+.d-block {
+    height: 75vh;
+    /* width: 90% !important; */
+    /* border: 1px solid red; */
+    /* width: 10%; */
+    display: block;
+    margin: 0px auto;
+}
+#carouselExampleSlidesOnly{
+    /* border: 1px solid red; */
+  
+}
