@@ -77,5 +77,5 @@ submit.onclick = async () => {
     Img_Url:imgUrl
   });
 
-  window.location  ='admin.html'
+  window.location  ='product.html'
 };

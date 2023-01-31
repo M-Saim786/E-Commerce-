@@ -5,17 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>E Mart - Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/19fcc4b5b5.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/KN_ED5agJkW4SWMJXnZz4KSIa7xC41aE8JZkcJsbr4Ci4ek3YCCsMowHnWqHiSGEH3o" type="image/x-icon">
 
 </head>
 
 <body>
+
+    <!-- Alret -->
+    <div class="alert show hide" id="alert">
+        <span class="fas fa-exclamation-circle a_icon"></span>
+        <span class="msg">Warning.. Error </span>
+        <span class="close-btn" id="close-alert">
+            <span class="fas fa-times a_icon"></span>
+        </span>
+    </div>
+
+    <div class="alert show hide" id="success">
+        <span class="fas fa-exclamation-circle s_icon"></span>
+        <span class="msg" id="suc_msg">Order Placed... Successfully</span>
+        <span class="close-btn" id="close-alert-success">
+            <span class="fas fa-times a_icon"></span>
+        </span>
+    </div>
+
+
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">E-Shopping</a>
+            <a class="navbar-brand" href="#"><i class="fa-brands fa-google-wallet" style="color: orange; font-size:30px;"></i> E-Shopping</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,7 +49,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="./Components/User_Order.html">See Orders</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -168,11 +190,65 @@
     </div>
 
 
-<div class="container">
-    <div class="row" id="showcards">
-
+    <div class="container-fluid" >
+        <div class="row" id="showcards">
+            <!-- <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-2">
+                <div class="card" >
+                    <img src="${dish.Img_Url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${dish.Dish_Name}</h5>
+                        <p class="card-text">Price :${dish.Dish_Pirce}</p>
+                        <p class="card-text">Product Quantity Available: ${dish.Dish_Quantity}</p>
+                        <a href="#" class="btn btn-primary" onclick='order(this)' id='${dish.Dish_Id}'>Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-2">
+                <div class="card" >
+                    <img src="${dish.Img_Url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${dish.Dish_Name}</h5>
+                        <p class="card-text">Price :${dish.Dish_Pirce}</p>
+                        <p class="card-text">Product Quantity Available: ${dish.Dish_Quantity}</p>
+                        <a href="#" class="btn btn-primary" onclick='order(this)' id='${dish.Dish_Id}'>Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-2">
+                <div class="card" >
+                    <img src="${dish.Img_Url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${dish.Dish_Name}</h5>
+                        <p class="card-text">Price :${dish.Dish_Pirce}</p>
+                        <p class="card-text">Product Quantity Available: ${dish.Dish_Quantity}</p>
+                        <a href="#" class="btn btn-primary" onclick='order(this)' id='${dish.Dish_Id}'>Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-2">
+                <div class="card" >
+                    <img src="${dish.Img_Url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${dish.Dish_Name}</h5>
+                        <p class="card-text">Price :${dish.Dish_Pirce}</p>
+                        <p class="card-text">Product Quantity Available: ${dish.Dish_Quantity}</p>
+                        <a href="#" class="btn btn-primary" onclick='order(this)' id='${dish.Dish_Id}'>Order Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col col-lg-3 col-md-4 col-sm-6 col-12 mt-2">
+                <div class="card" >
+                    <img src="${dish.Img_Url}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${dish.Dish_Name}</h5>
+                        <p class="card-text">Price :${dish.Dish_Pirce}</p>
+                        <p class="card-text">Product Quantity Available: ${dish.Dish_Quantity}</p>
+                        <a href="#" class="btn btn-primary" onclick='order(this)' id='${dish.Dish_Id}'>Order Now</a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </div>
-</div>
 
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>

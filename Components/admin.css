@@ -1,0 +1,50 @@
+* {
+  text-decoration: none !important;
+}
+body {
+  display: flex;
+}
+.sideBar {
+  /* border: 1px solid red; */
+  height: 100vh;
+  width: 25%;
+  background-color: #191919;
+  /* background-image: linear-gradient(to bottom ,black ,#0600B2); */
+  /* display: inline; */
+}
+.sideBar ul {
+  /* border: 1px solid red; */
+  list-style: none;
+  margin: 20px 10px;
+  padding: 35px 10px;
+}
+
+.sideBar ul li {
+  /* border: 1px solid red; */
+  padding: 25px 10px;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.sideBar ul li:hover {
+  background-color: #5f5959;
+  border-radius: 10px;
+}
+.sideBar ul li a {
+  color: white;
+  /* border: 1px solid red; */
+
+  display: flex !important;
+}
+.container {
+  background-color: yellow;
+  /* border: 1px solid red; */
+}
+#show_Prod , #seeOrder {
+  border: 2px solid black !important ;
+  width: 100%;
+}
+td {
+  border: 2px solid black;
+  font-size: 18px;
+  font-weight: bold;
+}
